@@ -22,6 +22,7 @@ console.log(isMenuOpen,"isMenuOpen")
         <nav className="navbar">
           <Link to="/" onClick={toggleMenu}>home</Link>
           <Link to="/about" onClick={toggleMenu}>about</Link>
+          <Link to="/project" onClick={toggleMenu}>project</Link>
           <Link to="/education" onClick={toggleMenu}>education</Link>
           <a href="#contact">contact</a>
         </nav>
@@ -39,6 +40,7 @@ console.log(isMenuOpen,"isMenuOpen")
           <nav className="navbar">
             <Link to="/" onClick={toggleMenu}>home</Link>
             <Link to="/about" onClick={toggleMenu}>about</Link>
+            <Link to="/project" onClick={toggleMenu}>project</Link>
             <Link to="/education" onClick={toggleMenu}>education</Link>
             <a href="#contact" onClick={toggleMenu}>contact</a>
           </nav>
@@ -56,7 +58,7 @@ console.log(isMenuOpen,"isMenuOpen")
 ></div>
 
 
-      <div id="theme-toggler" className="fas fa-moon"></div>
+      {/* <div id="theme-toggler" className="fas fa-moon"></div> */}
     </>
   );
 }

@@ -533,7 +533,12 @@ section{
 
 
 
-
+.project .content p {
+    font-size: 1.7rem;
+    color: var(--light-color);
+    line-height: 1.8;
+    padding: 1rem 0;
+}
 
 
 
@@ -566,7 +571,9 @@ section{
     .sidebar #menu-btn{
         display: initial;
     }
-
+    section{
+        margin-top:50px ;
+    }
 
 }
 
@@ -580,5 +587,7 @@ section{
         width:100%;
         border-right: 0;
     }
- 
+    section{
+        margin-top:50px ;
+    }
 }

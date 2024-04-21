@@ -2,13 +2,6 @@ import React from "react";
 function Home() {
   return (
 <>
-<div id="menu-btn" className="fas fa-bars"></div>
-
-
-
-<div id="theme-toggler" className="fas fa-moon"></div>
-
-
 
 <section className="home" id="home">
     
