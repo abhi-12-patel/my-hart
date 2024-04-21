@@ -14,7 +14,7 @@ console.log(isMenuOpen,"isMenuOpen")
     <>
       <header className="header">
         <div className="user">
-          <img src="developer1.png" alt="" />
+          <img src="developer2.png" alt="" />
           <h3>Jashoda Vasava</h3>
           <p>Web developer</p>
         </div>
@@ -24,7 +24,7 @@ console.log(isMenuOpen,"isMenuOpen")
           <Link to="/about" onClick={toggleMenu}>about</Link>
           <Link to="/project" onClick={toggleMenu}>project</Link>
           <Link to="/education" onClick={toggleMenu}>education</Link>
-          <a href="#contact">contact</a>
+          <Link to="/contact" onClick={toggleMenu}>contact</Link>
         </nav>
       </header>
 
@@ -32,7 +32,7 @@ console.log(isMenuOpen,"isMenuOpen")
       <div className={`sidebar ${isMenuOpen ? 'show' : ''}`}>
         <div className="sidebar-content">
           <div className="user">
-            <img src="developer1.png" alt="" />
+            <img src="developer2.png" alt="" />
             <h3>Jashoda Vasava</h3>
             <p>Web developer</p>
           </div>
@@ -42,7 +42,7 @@ console.log(isMenuOpen,"isMenuOpen")
             <Link to="/about" onClick={toggleMenu}>about</Link>
             <Link to="/project" onClick={toggleMenu}>project</Link>
             <Link to="/education" onClick={toggleMenu}>education</Link>
-            <a href="#contact" onClick={toggleMenu}>contact</a>
+            <Link to="/contact" onClick={toggleMenu}>contact</Link>
           </nav>
         </div>
       </div>

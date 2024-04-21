@@ -1,39 +1,8 @@
 import React, { useState } from 'react'
 
 const Project = () => {
-    const [selectedProject, setSelectedProject] = useState('Connecting Job Seekers and Recruiters');
+    const [selectedProject, setSelectedProject] = useState('cityjob');
 
-    const projectDetails = {
-      'Connecting Job Seekers and Recruiters': (
-        <>
-          <h2>Connecting Job Seekers and Recruiters</h2>
-          <p>
-            Website Sections:
-            - Home: Landing page introducing the platform's services and benefits.
-            - Jobseeker: Section dedicated to job seekers, providing them with resources and tools to find employment opportunities.
-            ...
-          </p>
-        </>
-      ),
-      'Wps-send Message': (
-        <>
-          <h2>Wps-send Message</h2>
-          <p>
-            Admin side:
-            - The WPS-Send Message project is a comprehensive solution designed to streamline communication with customers via WhatsApp...
-          </p>
-        </>
-      ),
-      'Over company website': (
-        <>
-          <h2>Over company website</h2>
-          <p>
-            Overview:
-            - The project aims to develop a comprehensive company website that serves as an online platform to showcase the company's services...
-          </p>
-        </>
-      ),
-    };
   return (
     <section className="project" id="services">
 
@@ -41,21 +10,21 @@ const Project = () => {
     
     {/* <div className="box-container margin"> */}
     <div className="project-nav">
-        <button onClick={() => setSelectedProject('Connecting Job Seekers and Recruiters')} className='btn'>
+        <button onClick={() => setSelectedProject('cityjob')} className='btn'>
           Connecting Job Seekers and Recruiters
         </button>
-        <button onClick={() => setSelectedProject('Wps-send Message')} className='btn'>
+        <button onClick={() => setSelectedProject('wp')} className='btn'>
           Wps-send Message
         </button>
-        <button onClick={() => setSelectedProject('Over company website')} className='btn'>
+        <button onClick={() => setSelectedProject('company')} className='btn'>
           Over company website
         </button>
       </div>
 
       {/* Selected Project Details */}
       <div className="project-details content">
-       
-       <h2><b>Connecting Job Seekers and Recruiters</b></h2>
+      {selectedProject === 'cityjob' && <div>
+       <h2 className='project-hadar'><b>Connecting Job Seekers and Recruiters</b></h2>
        <p>
            <strong>Website Sections:</strong><br />
            <b>Home:</b> Landing page introducing the platform's services and benefits.<br />
@@ -103,9 +72,9 @@ const Project = () => {
            <b>Front-end:</b> HTML, CSS, JavaScript, React.js, Typescript,Redux
            <b>Authentication:</b> JWT (JSON Web Tokens)
        </p>
-   
-      
-       <h2><b>Wps-send Message</b></h2>
+       </div>}
+       {selectedProject === 'wp' && <div>
+       <h2  className='project-hadar'><b>Wps-send Message</b></h2>
        <p>
            <strong>Admin side:</strong><br />
            The WPS-Send Message project is a comprehensive solution designed to streamline communication with customers via WhatsApp. It offers robust features for managing companies, users, products, and orders. Admin users can authenticate securely, manage message templates, and send customized messages to customer WhatsApp contacts.
@@ -116,9 +85,9 @@ const Project = () => {
            <b>Front-end:</b> HTML, CSS, JavaScript, React.js,Redux
            <b>Authentication:</b> JWT (JSON Web Tokens)
        </p>
-   
-      
-       <h2><b>Over company website</b></h2>
+       </div>}
+       {selectedProject === 'company' &&  <div>
+       <h2  className='project-hadar'><b>Over company website</b></h2>
        <p>
            <strong>Overview:</strong><br />
            The project aims to develop a comprehensive company website that serves as an online platform to showcase the company's services, projects, team members, and other relevant information. The website will have both admin and user-facing features to manage and display dynamic content efficiently.
@@ -126,33 +95,33 @@ const Project = () => {
    
        <p>
            <strong>Admin Side Features:</strong><br />
-           Login Form: Secure login mechanism for authorized personnel to access the admin dashboard.<br />
-           User List: A list of registered users with options for management and user-specific actions.<br />
+          <b> Login Form: </b>Secure login mechanism for authorized personnel to access the admin dashboard.<br />
+           <b>User List:</b> A list of registered users with options for management and user-specific actions.<br />
            <b>Header Session:</b> A customizable header section for managing website branding, navigation menus, and other essential elements.<br />
-           Services: Add, edit, or delete services offered by the company.<br />
+           <b>Services: </b>Add, edit, or delete services offered by the company.<br />
            Subservices under each service category.<br />
            Detailed information about each service and subservice.<br />
-           Projects: Manage and showcase company projects with detailed descriptions, images, and other relevant information.<br />
-           Blog and News: Create, edit, and publish blog posts and news articles.<br />
+           <b>Projects:</b> Manage and showcase company projects with detailed descriptions, images, and other relevant information.<br />
+           <b>Blog and News:</b> Create, edit, and publish blog posts and news articles.<br />
            Categorize and archive posts for easy navigation.<br />
-           About Company: Editable section to provide information about the company's history, mission, and vision.<br />
-           FAQs: Frequently asked questions section with answers to common queries.<br />
-           Contact Us: Manage contact information and integrate contact forms for user inquiries.<br />
-           Team: Add and manage team members with their profiles, roles, and contact details.<br />
-           Team Member: Individual profiles for team members with photos, bios, and social media links.
+           <b>About Company: </b>Editable section to provide information about the company's history, mission, and vision.<br />
+           <b>FAQs:</b> Frequently asked questions section with answers to common queries.<br />
+           <b>Contact Us:</b> Manage contact information and integrate contact forms for user inquiries.<br />
+           <b>Team: </b>Add and manage team members with their profiles, roles, and contact details.<br />
+           <b>Team Member:</b> Individual profiles for team members with photos, bios, and social media links.
        </p>
    
        <p>
            <strong>Website Features:</strong><br />
            <b>Header Session:</b> Consistent header across all pages with branding, navigation menus, and other essential links.<br />
-           Services: Display of company services with options to view subservices and detailed service information.<br />
-           Projects: Showcase of company projects with images, descriptions, and other relevant details.<br />
-           Blog and News: Access to blog posts, news articles, and company updates.<br />
-           About Company: Information about the company's background, mission, and values.<br />
-           FAQs: Answers to frequently asked questions for user guidance.<br />
-           Contact Us: Contact information and a contact form for user inquiries.<br />
-           Team: Overview of the company's team with links to individual team member profiles.<br />
-           Team Member: Detailed profiles of team members with photos, bios, and contact information.
+           <b>Services:</b> Display of company services with options to view subservices and detailed service information.<br />
+           <b>Projects:</b> Showcase of company projects with images, descriptions, and other relevant details.<br />
+           <b>Blog and News:</b> Access to blog posts, news articles, and company updates.<br />
+           <b>About Company:</b> Information about the company's background, mission, and values.<br />
+           <b>FAQs:</b> Answers to frequently asked questions for user guidance.<br />
+           <b>Contact Us:</b> Contact information and a contact form for user inquiries.<br />
+           <b>Team:</b> Overview of the company's team with links to individual team member profiles.<br />
+           <b>Team Member:</b> Detailed profiles of team members with photos, bios, and contact information.
        </p>
    
        <p>
@@ -164,8 +133,10 @@ const Project = () => {
            <strong>Technologies Used:</strong><br />
            <b>Front-end:</b> HTML, CSS, JavaScript, Next.js<br />
            Redux<br />
-           Authentication: JWT (JSON Web Tokens)
+           <b>Authentication:</b> JWT (JSON Web Tokens)
        </p>
+
+       </div>}
    </div>
    
     

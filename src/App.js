@@ -6,6 +6,7 @@ import { Nav } from './component/nav/Nav';
 import About from './page/about/about';
 import Education from './page/education/education';
 import Project from './page/project/project';
+import Contact from './page/contact/contact';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
     <Route path="/about" element={<About />} />
     <Route path="/education" element={<Education />} />
     <Route path="/project" element={<Project />} />
+    <Route path="/contact" element={<Contact />} />
   </Routes>
   </BrowserRouter>
   );
