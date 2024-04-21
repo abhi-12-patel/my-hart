@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const About = () => {
   return (
@@ -22,7 +23,7 @@ const About = () => {
         <div className="content">
             <h3>my name is <span>Jashoda Vasava</span></h3>
             <p>Experienced React.js Developer skilled in building responsive UI components with React and Redux. Committed to optimizing web applications for performance and scalability. Seeking to contribute to a dynamic team and deliver high-quality software solutions.</p>
-            <a href="#" className="btn">contact me</a>
+            <Link to="/contact" className="btn">contact me</Link>
         </div>
 
     </div>
