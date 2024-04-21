@@ -563,6 +563,9 @@ section{
     #menu-btn{
         display: initial;
     }
+    .sidebar #menu-btn{
+        display: initial;
+    }
 
 
 }

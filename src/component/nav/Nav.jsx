@@ -4,13 +4,12 @@ import { Link } from 'react-router-dom';
 export const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  let toggleMenu = () => {
+  const toggleMenu = () => {
     console.log('toggleMenu called');
-    setIsMenuOpen(prevState => !prevState);
+    setIsMenuOpen(!isMenuOpen);
   };
   
-  console.log(isMenuOpen, "isMenuOpen");
-
+console.log(isMenuOpen,"isMenuOpen")
   return (
     <>
       <header className="header">
@@ -48,10 +47,14 @@ export const Nav = () => {
 
       {/* Hamburger menu icon */}
       <div 
-        id="menu-btn" 
-        className={`fas fa-bars ${isMenuOpen ? 'open' : ''}`}
-        onClick={toggleMenu}
-      ></div>
+  id="menu-btn" 
+  className={`fas fa-bars ${isMenuOpen ? 'open' : ''}`}
+  onClick={() => {
+    console.log('Hamburger menu clicked');
+    toggleMenu();
+  }}
+></div>
+
 
       <div id="theme-toggler" className="fas fa-moon"></div>
     </>
