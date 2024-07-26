@@ -15,7 +15,7 @@ console.log(isMenuOpen,"isMenuOpen")
       <header className="header">
         <div className="user">
           <img src="developer2.png" alt="" />
-          <h3>Jashoda Vasava</h3>
+          <h3>Jashoda Hothi</h3>
           <p>Web developer</p>
         </div>
 
@@ -33,7 +33,7 @@ console.log(isMenuOpen,"isMenuOpen")
         <div className="sidebar-content">
           <div className="user">
             <img src="developer2.png" alt="" />
-            <h3>Jashoda Vasava</h3>
+            <h3>Jashoda Hothi</h3>
             <p>Web developer</p>
           </div>
 

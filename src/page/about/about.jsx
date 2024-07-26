@@ -21,7 +21,7 @@ const About = () => {
         </div>
 
         <div className="content">
-            <h3>my name is <span>Jashoda Vasava</span></h3>
+            <h3>my name is <span>Jashoda Hothi</span></h3>
             <p>Experienced React.js Developer skilled in building responsive UI components with React and Redux. Committed to optimizing web applications for performance and scalability. Seeking to contribute to a dynamic team and deliver high-quality software solutions.</p>
             <Link to="/contact" className="btn">contact me</Link>
         </div>

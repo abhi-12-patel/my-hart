@@ -6,7 +6,7 @@ function Home() {
 <section className="home" id="home">
     
     <div className="content">
-        <h3>Jashoda Vasava</h3>
+        <h3>Jashoda Hothi</h3>
         <p>my profile</p>
         <a href="#" className="btn">download</a>
     </div>
